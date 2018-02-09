@@ -17,11 +17,9 @@ var answersArray = [];
 
 var lettersLeft = words.length;
 
-// target blankAray.join getEBI (words)
 
-function words(){
-document.getElementById('box1').style.fontFamily = 'arial';
-}
+var words = document.getElementById('words').innerHTML
+
 
 // alphabet
 var qwerty = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
