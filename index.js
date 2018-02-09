@@ -18,7 +18,7 @@ var answersArray = [];
 var lettersLeft = words.length;
 
 
-var words = document.getElementById('words').innerHTML
+var words = document.getElementById('box1').innerHTML
 
 
 // alphabet
