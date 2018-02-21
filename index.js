@@ -2,20 +2,14 @@ var degrassi = [
     "Maya", "Zig", "Lola", "Frankie", "Yael", "Tiny", "Zoe", "Tristan", "Grace", "Esme", "Winston", "Hunter", "Vijay", "Rasha", "Goldi", "Jonah", "Baaz", "Miles", "Saad", "Shay"
 ];
 
-var myWord = document.getElementById(myWord);
 
+// select a random character
+var currentCharacter = degrassi[Math.floor(Math.random() * degrassi.length)];
 
-
-// words
-var words = ['cat', 'dog', 'pig', 'starfish'];
-
-var myWord = words[Math.floor(Math.random() * words.length)];
-
-var blankArray = [];
-
-var answersArray = [];
- for (let i = 0; i < words.length; i++){
-	blankArray.push("_");
+// the array that loops through characters
+var charactersArray = [];
+for (var i = 0; i < currentCharacter.length; i++) {
+    charactersArray[i] = "_";
 }
 
 var lettersLeft = words.length;
