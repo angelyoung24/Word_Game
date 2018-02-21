@@ -1,3 +1,6 @@
+var degrassi = [
+    "Maya", "Zig", "Lola", "Frankie", "Yael", "Tiny", "Zoe", "Tristan", "Grace", "Esme", "Winston", "Hunter", "Vijay", "Rasha", "Goldi", "Jonah", "Baaz", "Miles", "Saad", "Shay"
+];
 
 var myWord = document.getElementById(myWord);
 
