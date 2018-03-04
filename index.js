@@ -1,68 +1,108 @@
-var degrassi = [
-    "Maya", "Zig", "Lola", "Frankie", "Yael", "Tiny", "Zoe", "Tristan", "Grace", "Esme", "Winston", "Hunter", "Vijay", "Rasha", "Goldi", "Jonah", "Baaz", "Miles", "Saad", "Shay"
+var degrassi = [{
+        name: "Maya",
+        hint: "Their sister visits from college due to a tragedy"
+    },
+    {
+        name: "Zig",
+        hint: "Only character to be in a polyamourus relationship"
+    },
+    {
+        name: "Lola",
+        hint: "This character had an abortion"
+    },
+    {
+        name: "Frankie",
+        hint: "This character has a twin"
+    },
+    {
+        name: "Yael",
+        hint: "This character is generqueer"
+    },
+    {
+        name: "Tiny",
+        hint: "This character was in a gang with his brother"
+    },
+    {
+        name: "Zoe",
+        hint: "This character was on an actor on West Drive",
+    },
+    {
+        name: "Tristan",
+        hint: "This character was in a coma after a bus crash"
+    },
+    {
+        name: "Grace",
+        hint: "This character has cystic fibrosis"
+    },
+    {
+        name: "Esme",
+        hint: "This character pushed their significant other down a hill"
+    },
+    {
+        name: "Winston",
+        hint: "This characters nickname is Chewy"
+    },
+    {
+        name: "Hunter",
+        hint: "This character caused a school lockdown"
+    },
+    {
+        name: "Vijay",
+        hint: 'First line: "Oh My God! I love high school."'
+    },
+    {
+        name: "Rasha",
+        hint: "This character was prom queen with their significant other"
+    },
+    {
+        name: "Goldi",
+        hint: "This character is president of the feminist club"
+    },
+    {
+        name: "Jonah",
+        hint: "This character has a daughter"
+    },
+    {
+        name: "Baaz",
+        hint: "This character has an older sister who graduated in 2016"
+    },
+    {
+        name: "Miles",
+        hint: "This characters father is abusive"
+    },
+    {
+        name: "Saad",
+        hint: "This characters nickname is Creepy Camera Guy",
+    },
+    {
+        name: "Shay",
+        hint: "This character was in a love triangle with their best friend"
+    }
 ];
 
 
+
 // select a random character
-var currentCharacter = degrassi[Math.floor(Math.random() * degrassi.length)];
+var random = degrassi[Math.floor(Math.random() * degrassi.length)];
+
+degrassi[random].name //gives you the name
+degrassi[random].hint //gives you its corresponding hint
+
+
 
 // the array that loops through characters
-var charactersArray = [];
-for (var i = 0; i < currentCharacter.length; i++) {
-    charactersArray[i] = "_";
+var answer = [];
+for (var i = 0; i < degrassi.length; i++) {
+    answer[i] = "_";
 }
 
-var lettersLeft = currentCharacter.length;
+var lettersLeft = degrassi.length;
 
 
-// while loop
-// while (lettersLeft > 0) {
-//     var angel = document.getElementById("angel");
-//     angel.innerHTML = answersArray.join(" ");
-//     // var guessMe = 
-// }
+var degrassi = document.getElementById("degrassi");
 
 
-var simpson = document.getElementById("simpson");
-simpson.innerHTML = charactersArray.join(" ");
 
-
-// hints also knows as spoiler alert
-var spoilerz = document.getElementById.spoiler.onclick = function () {
-    var spoiler = [
-        "Their sister visits from college due to a tragedy",
-        "Only character to be in a polyamourus relationship",
-        "This character had an abortion",
-        "This character has a twin",
-        "This character is generqueer",
-        "This character was in a gang with his brother",
-        "This character was on an actor on West Drive",
-        "This character was in a coma after a bus crash",
-        "This characters nickname is THe Watcher",
-        "This character pushed their significant other down a hill",
-        "This characters nickname is Chewy",
-        "This character caused a school lockdown",
-        'First line: "Oh My God! I love high school."',
-        "This character was prom queen with their significant other",
-        "This character is president of the feminist club",
-        "This character has a daughter",
-        "This character has an older sister who graduated in 2016",
-        "This characters father is abusive",
-        "This characters nickname is Creepy Camera Guy",
-        "This character was in a love triangle with her best friend"
-    ];
-
-    // selects a spoiler this should coorespond with the character
-    var currentSpoiler = spoiler[Math.floor(Math.random() * spoiler.length)];
-
-
-    // loop through spoilers
-    var spoilerArray = [];
-    for (var i = 0; i < currentSpoiler.length; i++) {
-        spoilerArray[i] = "_";
-    }
-
-};
 
 // // alphabet
 // var qwerty = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
