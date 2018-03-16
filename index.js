@@ -72,7 +72,7 @@ var showAnswer = document.getElementById("answer");
 var showHint = document.getElementById("hint");
 var showLives = document.getElementById("lives");
 // var checkWord = currentWord.split("");
-var lives = 5
+var lives = 6
 var countdown = false
 
 // the array that loops through characters
@@ -86,18 +86,20 @@ showLives.innerHTML = "You have " + lives + " lives left";
 
 // array to loop through letters and checks if letters match the word
 function check(qwerty) {
-    //countdown = false
+    countdown = false
     for (i = 0; i < currentWord.length; i++) {
         // console.log(qwerty); console.log(currentWord);
 
         if (qwerty === currentWord[i].toLowerCase()) {
             countdown = true
+            
             answer[i] = qwerty;
             degrassi.innerHTML = answer.join(" ");
             targetHint();
             checkWord();
         } else {
-            lives--
+            // console.log(lives)
+            checkWord();
         }
 
     }
@@ -110,32 +112,21 @@ function targetHint() {
 
 }
 
-
-
-
 function checkWord() {
-    if (countdown != true) {
-        lives = lives-1;
-        console.log(lives);
+    console.log(answer.join('')+' '+currentWord)
+    if (countdown != true && i === currentWord.length-1) {
+        lives--;
         showLives.innerHTML = "You have " + lives + " lives left";
-    } 
+    } console.log(countdown != true && i === currentWord.length-1)
 
-    if (currentWord == answer.join(" ")) {
-        function gameOver() {
-            if (lives == 0) {
-                showLives.innerHTML = "Game Over";
-            } console.log((currentWord == answer.join(" ")))
-        
-            if (checkWord(lives.value) == false) {
-                lives--;
-                showLives.innerHTML = "You Win!";
-            }
-        }
-        }
+    if (lives > 0 && answer.join('') === currentWord.toLowerCase()) {
+        showLives.innerHTML = "You Win! Refresh to Start Over!";
+    }
     
-        // create 5 if/else statements that are sarcastic but also in the vein of degrassi
-
-
+    if (lives === 0) {
+        showLives.innerHTML = "Game Over! Refresh to Start Over!";
+    }
+    console.log(lives === 0)
 }
 
 
