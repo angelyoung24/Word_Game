@@ -71,8 +71,9 @@ var currentHint = degrassi[random].hint //corresponding hint
 var showAnswer = document.getElementById("answer");
 var showHint = document.getElementById("hint");
 var showLives = document.getElementById("lives");
-var checkWord = currentWord.split("");
-
+// var checkWord = currentWord.split("");
+var lives = 5
+var countdown = false
 
 // the array that loops through characters
 var answer = [];
@@ -83,21 +84,25 @@ for (var i = 0; i < currentWord.length; i++) {
 showAnswer.innerText = answer.join(" ");
 showLives.innerHTML = "You have " + lives + " lives left";
 
-// array to loop through letters
+// array to loop through letters and checks if letters match the word
 function check(qwerty) {
+    //countdown = false
     for (i = 0; i < currentWord.length; i++) {
         // console.log(qwerty); console.log(currentWord);
 
         if (qwerty === currentWord[i].toLowerCase()) {
+            countdown = true
             answer[i] = qwerty;
             degrassi.innerHTML = answer.join(" ");
             targetHint();
-
+            checkWord();
+        } else {
+            lives--
         }
 
     }
 }
-// targets hint after correct first word
+// targets hint after correct first word because I am that nice
 function targetHint() {
 
     showAnswer.innerText = answer.join(" ");
@@ -105,20 +110,33 @@ function targetHint() {
 
 }
 
-lives = 6;
 
-function checkWin() {
 
-    if (lives < 1) {
-        showLives.innerHTML = "Game Over";
-    }
 
-    if (checkWord(lives.value) == false) {
-        lives--;
-        showLives.innerHTML = "You Win!";
-    }
+function checkWord() {
+    if (countdown != true) {
+        lives = lives-1;
+        console.log(lives);
+        showLives.innerHTML = "You have " + lives + " lives left";
+    } 
+
+    if (currentWord == answer.join(" ")) {
+        function gameOver() {
+            if (lives == 0) {
+                showLives.innerHTML = "Game Over";
+            } console.log((currentWord == answer.join(" ")))
+        
+            if (checkWord(lives.value) == false) {
+                lives--;
+                showLives.innerHTML = "You Win!";
+            }
+        }
+        }
+    
+        // create 5 if/else statements that are sarcastic but also in the vein of degrassi
+
+
 }
-
 
 
 window.onload = check(qwerty)
@@ -176,3 +194,4 @@ for (let i = 0; i < qwerty.length; i++) {
         boxes[i].style.backgroundColor = 'grey';
     });
 }
+
