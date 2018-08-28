@@ -22,7 +22,8 @@ body {
        3px 3px 0 blue,
      -1px -1px 0 gold,  
       1px -1px 0 blue,
-      -1px 1px 0 gold,
+      -1px 1px 0 white
+      +,
        1px 1px 0 blue;
 }
 
@@ -70,7 +71,9 @@ width: fit-content;
 
 div.box {
     font-family: 'Quicksand', sans-serif;
-    color:yellow;
+    font-size: 23px;
+    text-shadow: 1px 1px blue;
+    color: white;
 
 }
 
