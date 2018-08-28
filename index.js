@@ -19,7 +19,7 @@ var degrassi = [
         hint: "This character was in a gang with his brother"
     }, {
         name: "Zoe",
-        hint: "This character was on an actor on West Drive"
+        hint: "This character was an actor on West Drive"
     }, {
         name: "Tristan",
         hint: "This character was in a coma after a bus crash"
@@ -124,7 +124,7 @@ function checkWord() {
     }
     
     if (lives === 0) {
-        showLives.innerHTML = "Game Over! Refresh to Start Over!";
+        showLives.innerHTML = "Game Over! The answer is " + currentWord + "! Refresh to Start Over!";
     }
     console.log(lives === 0)
 }
@@ -167,7 +167,7 @@ for (let i = 0; i < qwerty.length; i++) {
     div.appendChild(letters);
     div.style.width = '30px';
     div.style.height = '30px';
-    div.style.border = '2px solid';
+    div.style.border = '2px solid gold';
     div.style.margin = '10px';
     div.style.display = 'inline-block';
     div.style.textAlign = 'center';
@@ -182,7 +182,7 @@ for (let i = 0; i < qwerty.length; i++) {
     boxes[i].addEventListener("click", function (e) {
         // check(the value of that boxes letter)
         check(this.innerHTML);
-        boxes[i].style.backgroundColor = 'grey';
+        boxes[i].style.backgroundColor = 'blue';
     });
 }
 
