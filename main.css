@@ -1,0 +1,76 @@
+body {
+    background-image: url("degrassi.gif");
+    background-repeat: no-repeat;
+    background-size: 1400px 700px, cover;
+}
+
+#back {
+    /* position: fixed;  */
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.title {
+    font-family: 'Muli', sans-serif;
+    -webkit-text-stroke: 1px blue;
+   color: gold;
+   text-shadow:
+       3px 3px 0 blue,
+     -1px -1px 0 gold,  
+      1px -1px 0 blue,
+      -1px 1px 0 gold,
+       1px 1px 0 blue;
+}
+
+h2 {
+    font-family: 'Muli', sans-serif;
+    color:gold;
+    text-shadow: 3px 2px blue;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#hint, #answer, #lives {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: gold;
+    font-size: 20px;
+    
+}
+
+#answer {
+    width: fit-content;
+	height: auto;
+    background:blue;
+    opacity: 0.9;
+    margin:auto;
+}
+
+#hint {
+    width: fit-content;
+	height: auto;
+    background:blue;
+    opacity: 0.9;
+    margin:auto;
+}
+
+#lives {
+width: fit-content;
+	height: auto;
+    background:blue;
+    opacity: 0.9;
+    margin:auto;
+}
+
+div.box {
+    font-family: 'Quicksand', sans-serif;
+    color:yellow;
+
+}
+
