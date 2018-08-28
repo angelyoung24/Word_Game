@@ -120,11 +120,13 @@ function checkWord() {
     } console.log(countdown != true && i === currentWord.length-1)
 
     if (lives > 0 && answer.join('') === currentWord.toLowerCase()) {
-        showLives.innerHTML = "You Win! Refresh to Start Over!";
+        showLives.innerHTML = "You Win!";
+        window.location.reload();
     }
     
     if (lives === 0) {
-        showLives.innerHTML = "Game Over! The answer is " + currentWord + "! Refresh to Start Over!";
+        showLives.innerHTML = "Game Over! The answer is " + currentWord + "!";
+        window.location.reload();
     }
     console.log(lives === 0)
 }
