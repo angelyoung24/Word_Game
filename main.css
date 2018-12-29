@@ -1,7 +1,12 @@
+:root {
+    --primary: rgb(20, 58, 225);
+    --secondary: gold;
+    --my-graident: linear-gradient(var(--secondary), var(--primary));
+}
+
 body {
-    background-image: url("degrassi.gif");
-    background-repeat: no-repeat;
-    background-size: 1400px 700px, cover;
+    height: 100vh;
+    background-image: var(--my-graident);
 }
 
 #back {
@@ -17,13 +22,8 @@ body {
 .title {
     font-family: 'Muli', sans-serif;
     -webkit-text-stroke: 1px blue;
-   color: gold;
-   text-shadow:
-       3px 3px 0 blue,
-     -1px -1px 0 gold,  
-      1px -1px 0 blue,
-      -1px 1px 0 white
-       1px 1px 0 blue;
+   color: var(--primary);
+   text-shadow:;
 }
 
 h2 {
