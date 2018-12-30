@@ -40,6 +40,7 @@ h2 {
     font-family: 'Quicksand', sans-serif;
     color: var(--secondary);
     text-shadow: var(--my-shadow);
+    font-size: 2rem;
     
 }
 
@@ -62,18 +63,19 @@ h2 {
 }
 
 #lives {
-width: fit-content;
+    width: fit-content;
 	height: auto;
-    background:blue;
     opacity: 0.9;
     margin:auto;
 }
 
 div.box {
     font-family: 'Quicksand', sans-serif;
-    font-size: 23px;
-    text-shadow: 1px 1px blue;
+    font-size: 1.4rem;
+    text-shadow: var(--my-shadow);
     color: white;
 
 }
+
+
 
