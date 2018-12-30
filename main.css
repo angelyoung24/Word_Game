@@ -2,21 +2,22 @@
     --primary: rgb(20, 58, 225);
     --secondary: gold;
     --my-graident: linear-gradient(var(--secondary), var(--primary));
+    --my-shadow: 1px 1px black;
 }
 
 body {
-    height: 100vh;
+    height: 125vh;
     background-image: var(--my-graident);
+    background-repeat: no-repeat;
 }
 
 #back {
-    /* position: fixed;  */
-  top: 0; 
-  left: 0; 
+    top: 0; 
+    left: 0; 
 	
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .title {
