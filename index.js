@@ -117,7 +117,8 @@ function checkWord() {
     if (countdown != true && i === currentWord.length-1) {
         lives--;
         showLives.innerHTML = "You have " + lives + " lives left";
-    } console.log(countdown != true && i === currentWord.length-1)
+    } 
+    // console.log(countdown != true && i === currentWord.length-1)
 
     if (lives > 0 && answer.join('') === currentWord.toLowerCase()) {
         showLives.innerHTML = "You Win!";
@@ -128,7 +129,7 @@ function checkWord() {
         showLives.innerHTML = "Game Over! The answer is " + currentWord + "!";
         window.location.reload();
     }
-    console.log(lives === 0)
+    // console.log(lives === 0)
 }
 
 
