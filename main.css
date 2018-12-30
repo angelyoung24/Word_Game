@@ -22,15 +22,13 @@ body {
 
 .title {
     font-family: 'Muli', sans-serif;
-    -webkit-text-stroke: 1px blue;
-   color: var(--primary);
-   text-shadow:;
+    color: var(--primary);
 }
 
 h2 {
     font-family: 'Muli', sans-serif;
-    color:gold;
-    text-shadow: 3px 2px blue;
+    color: var(--primary);
+    text-shadow: var(--my-shadow);
 }
 
 .wrapper {
