@@ -35,7 +35,9 @@ h2 {
     text-align: center;
 }
 
-#hint, #answer, #lives {
+#hint,
+#answer,
+#lives {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     color: var(--secondary);
