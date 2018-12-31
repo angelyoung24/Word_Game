@@ -43,14 +43,14 @@ h2 {
     color: var(--secondary);
     text-shadow: var(--my-shadow);
     font-size: 2rem;
-    
+
 }
 
 #answer {
     width: fit-content;
-	height: auto;
+    height: auto;
     opacity: 0.9;
-    margin:auto;
+    margin: auto;
     color: var(--primary);
     font-size: 2rem;
 }
