@@ -113,7 +113,7 @@ function targetHint() {
 }
 
 function checkWord() {
-    console.log(answer.join('')+' '+currentWord)
+    // console.log(answer.join('')+' '+currentWord)
     if (countdown != true && i === currentWord.length-1) {
         lives--;
         showLives.innerHTML = "You have " + lives + " lives left";
