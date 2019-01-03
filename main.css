@@ -77,3 +77,15 @@ div.box {
     text-shadow: var(--my-shadow);
     color: white;
 }
+
+@media all and (max-width: 450px) {
+    body {
+        height: 150vh;
+    }
+
+    div.box {
+        width: 70px;
+        height: 70px;
+        border: blue;
+    }
+}
