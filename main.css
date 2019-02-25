@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Quicksand');
 :root {
     --primary: rgb(20, 58, 225);
     --secondary: gold;
@@ -6,35 +7,22 @@
 }
 
 body {
-    height: 125vh;
-    background-image: var(--my-graident);
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     background-repeat: no-repeat;
 }
 
-#back {
-    top: 0;
-    left: 0;
-
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
+.navbar {
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .title {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Kalam',
+    cursive;
     color: var(--primary);
 }
 
-h2 {
-    font-family: 'Muli', sans-serif;
-    color: var(--primary);
-    text-shadow: var(--my-shadow);
-}
 
-.wrapper {
-    text-align: center;
-}
-
+h6,
 #hint,
 #answer,
 #lives {
@@ -75,7 +63,7 @@ div.box {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.4rem;
     text-shadow: var(--my-shadow);
-    color: white;
+    color:#000;
 }
 
 @media all and (max-width: 450px) {
