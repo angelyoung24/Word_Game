@@ -168,9 +168,9 @@ for (let i = 0; i < qwerty.length; i++) {
     var div = document.createElement('div');
     var letters = document.createTextNode(qwerty[i])
     div.appendChild(letters);
-    div.style.width = '30px';
-    div.style.height = '30px';
-    div.style.border = '2px solid gold';
+    div.style.width = '40px';
+    div.style.height = '40px';
+    div.style.border = '2px solid blue';
     div.style.margin = '10px';
     div.style.display = 'inline-block';
     div.style.textAlign = 'center';
@@ -185,7 +185,7 @@ for (let i = 0; i < qwerty.length; i++) {
     boxes[i].addEventListener("click", function (e) {
         // check(the value of that boxes letter)
         check(this.innerHTML);
-        boxes[i].style.backgroundColor = 'blue';
+        boxes[i].style.backgroundColor = 'gold';
     });
 }
 
