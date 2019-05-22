@@ -19,7 +19,14 @@ body {
     font-family: 'Kalam',
     cursive;
     color: var(--primary);
+    text-shadow: var(--my-shadow);
 }
+
+.jumbotron {
+    background-image: url("DegrassiNextClassSeason3And4.jpg");
+    background-size: cover;
+}
+
 
 
 h6,
@@ -28,7 +35,7 @@ h6,
 #lives {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    color: var(--secondary);
+    color: var(--primary);
     text-shadow: var(--my-shadow);
     font-size: 2rem;
 
@@ -46,7 +53,7 @@ h6,
 #hint {
     width: fit-content;
     height: auto;
-    color: var(--secondary);
+    color: var(--primary);
     text-shadow: var(--my-shadow);
     opacity: 0.9;
     margin: auto;
@@ -57,6 +64,8 @@ h6,
     height: auto;
     opacity: 0.9;
     margin: auto;
+    color: var(--primary);
+    text-shadow: var(--my-shadow);
 }
 
 div.box {
