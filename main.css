@@ -29,6 +29,9 @@ body {
     opacity: 0.6;
 }
 
+.text {
+    background-color: aliceblue;
+}
 
 
 h6,
@@ -46,7 +49,6 @@ h6,
 #answer {
     width: fit-content;
     height: auto;
-    opacity: 0.9;
     margin: auto;
     color: var(--primary);
     font-size: 2rem;
@@ -57,14 +59,12 @@ h6,
     height: auto;
     color: var(--primary);
     text-shadow: var(--my-shadow);
-    opacity: 0.9;
     margin: auto;
 }
 
 #lives {
     width: fit-content;
     height: auto;
-    opacity: 0.9;
     margin: auto;
     color: var(--primary);
     text-shadow: var(--my-shadow);
@@ -74,7 +74,7 @@ div.box {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.4rem;
     text-shadow: var(--my-shadow);
-    color:#000;
+    color: #000;
 }
 
 @media all and (max-width: 450px) {
