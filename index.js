@@ -171,8 +171,9 @@ for (let i = 0; i < qwerty.length; i++) {
     div.style.width = '40px';
     div.style.height = '40px';
     div.style.border = '2px solid blue';
-    div.style.margin = '10px';
+    div.style.margin = '5.5px';
     div.style.display = 'inline-block';
+    div.style.backgroundColor = 'gold';
     div.style.textAlign = 'center';
     div
         .classList
@@ -185,7 +186,7 @@ for (let i = 0; i < qwerty.length; i++) {
     boxes[i].addEventListener("click", function (e) {
         // check(the value of that boxes letter)
         check(this.innerHTML);
-        boxes[i].style.backgroundColor = 'gold';
+        boxes[i].style.backgroundColor = '#209CEE';
     });
 }
 
