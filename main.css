@@ -8,39 +8,15 @@
 }
 
 body {
-    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    background-repeat: no-repeat;
+    background-color: #2696F1;
 }
 
-.navbar {
-    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-}
-
-.title {
-    font-family: 'Kalam',
-        cursive;
-    color: var(--primary);
-    text-shadow: var(--my-shadow);
-}
-
-.jumbotron {
-    background-image: url("DegrassiNextClassSeason3And4.jpg");
-    background-size: cover;
-    opacity: 0.6;
-}
-
-.text {
-    background-color: aliceblue;
-}
-
-
-h6,
 #hint,
 #answer,
 #lives {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    color: var(--primary);
+    color: var(--secondary);
     text-shadow: var(--my-shadow);
     font-size: 2rem;
 
@@ -50,14 +26,14 @@ h6,
     width: fit-content;
     height: auto;
     margin: auto;
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 2rem;
 }
 
 #hint {
     width: fit-content;
     height: auto;
-    color: var(--primary);
+    color: var(--secondary);
     text-shadow: var(--my-shadow);
     margin: auto;
 }
@@ -66,15 +42,18 @@ h6,
     width: fit-content;
     height: auto;
     margin: auto;
-    color: var(--primary);
+    color: var(--secondary);
     text-shadow: var(--my-shadow);
 }
 
 div.box {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.4rem;
+    font-size: 16px;
+    height: 10px;
+    width: auto;
     text-shadow: var(--my-shadow);
     color: #000;
+    padding: 0;
 }
 
 @media all and (max-width: 450px) {
