@@ -5,10 +5,16 @@
     --secondary: gold;
     --my-graident: linear-gradient(var(--secondary), var(--primary));
     --my-shadow: 1px 1px black;
+    --offset: blue;
 }
 
 body {
     background-color: #2696F1;
+}
+
+img {
+    border: 1px solid black;
+    box-shadow: 10px 10px blue;
 }
 
 #hint,
